@@ -1,0 +1,88 @@
+.hero{
+    height: 65vh;
+    display: flex;
+}
+
+.hero__left{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.hero__left__container{
+
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0 auto 16%;
+}
+
+.hero__left__container > * {
+    margin: 15px 0;
+}
+
+.hero__left__title{
+    font-size: 31px;
+    font-weight: 500;
+    padding-right: 15px;
+    color: var(--very-dark-blue);
+}   
+
+.hero__left__text{
+    color: var(--grayish-blue);
+    padding-right: 10px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 15px;
+    max-width: 470px;
+}
+
+.hero__right{
+
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero__right > img{
+    position: absolute;
+    top: 8%;
+    width: 44vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: 350px;
+    max-width: 700px;
+}
+
+.hero__right__blue-blob{
+    height: 22vw;
+    width: 80%;
+    background-color: var(--soft-blue);
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    min-height: 220px;
+}
+
+.heroleftbtn{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.hero__button__chrome{
+    margin-right: 10px;
+    color: white;
+    background-color: var(--soft-blue);
+}
+
+.hero__button__firefox{
+    color: var(--very-dark-blue);
+    background-color: rgba(120, 120, 120, .2);
+    box-shadow: 0 5px 2px -2px rgba(83, 104, 223, .3);
+}

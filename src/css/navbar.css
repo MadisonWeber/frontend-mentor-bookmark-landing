@@ -1,0 +1,37 @@
+.NavBar{
+    /* border: 2px solid black; */
+    height: 130px;
+}
+
+.navbar__container{
+    margin: 0 auto;
+    width: var(--inner-width);
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav{
+    list-style: none;
+    display: flex;
+}
+
+.nav li{
+    padding: 8px 22px;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.key-element{
+    color: white;
+    padding: 8px 80px;
+    background-color: var(--soft-red);
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 10px;
+}

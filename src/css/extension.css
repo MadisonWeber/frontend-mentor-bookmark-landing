@@ -1,0 +1,97 @@
+.extension{
+    /* border: 2px solid black; */
+    height: 75vh;
+}
+
+.extension__container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.extension__top{
+    /* border: 2px solid purple; */
+    flex: .35;
+    text-align: center;
+}
+
+.extension__top h3{
+    font-size: 20px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.extension__top p{
+    width: 35%;
+    margin: auto;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--grayish-blue);
+    max-width: 400px;
+}
+
+.extension__bottom{
+    /* border: 2px solid blue; */
+    flex: .65;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.extension__bottom__container{
+    /* border: 5px solid seagreen; */
+    max-width: 900px;
+    min-width: 600px;
+    height: 75%;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.extension__chrome, 
+.extension__firefox,
+.extension__opera{
+    /* border: 2px solid black; */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 3px rgba(100, 100, 100, .1);
+}
+
+.extension__chrome{
+    align-self: flex-start;
+}
+
+.extension__browser__title{
+    margin-bottom: 0;
+}
+
+.extension__browser__info{
+    color: var(--grayish-blue);
+    font-size: 12px;
+    margin-top: 8px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+.extension__opera{
+    align-self: flex-end;
+}
+
+.add__extension__btn{
+    color: white;
+    background-color: var(--soft-blue);
+    padding: 10px 15px;
+    border-radius: 4px;
+    white-space: nowrap;
+    margin-top: 20px;
+}
+
+.dotted{
+    height: 4px;
+    width: calc(100% + 40px);
+    transform: translateX(-20px);
+    background:url("../images/bg-dots.svg") 
+}
