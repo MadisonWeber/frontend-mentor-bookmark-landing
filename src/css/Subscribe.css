@@ -1,0 +1,105 @@
+.subscribe{
+    height: 30vh;
+    background-color: var(--soft-blue);
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.subscribe__container{
+    height: 80%;
+    margin: auto;
+    min-width: 450px;
+    width: 40%;
+    border: 2px solid black;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.already-joined{
+
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.subscribe__title{
+    font-size: 20px;
+    padding: 0 10px;
+    letter-spacing: 2px;
+    width: 340px;
+    margin: 0 auto;
+}
+
+.subscribe-form{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.input__container{
+    position: relative;
+}
+
+.input__container> input{
+    padding: 10px 12px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    width: 240px;
+    position: relative;
+    z-index: 1;
+    border: 2px solid transparent;
+
+}
+
+.error-border{
+    border: 2px solid var(--soft-red);
+}
+
+.input__container > input::placeholder{
+    color: var(--grayish-blue)
+}
+
+.input__container >svg{
+    position: absolute;
+    right: 10px;
+    top: 22%;
+    bottom: 25%;
+    z-index: 2;
+}
+
+.contact-us{
+    background-color: var(--soft-red);
+    color: white;
+    border-radius: 4px;
+    padding: 10px 12px;
+    margin-left: 10px;
+    border: 2px solid transparent;
+}
+
+.contact-us:active{
+    color: var(--soft-red);
+    border: 2px solid var(--soft-red);
+    background-color: white;
+}
+
+.form-error-message{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    background-color: var(--soft-red);
+    font-size: 10px;
+    padding: 4px 3px;
+    border-radius: 4px;
+    text-align: left;
+    padding-left: 20px;
+    z-index: 0;
+    height: 30px;
+    line-height: 30px;
+}

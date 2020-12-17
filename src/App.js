@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import Extension from './components/Extension';
+import FrequentlyAsked from './components/FrequentlyAsked';
+import Subscribe from './components/Subscribe';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Hero />
       <Features />
       <Extension />
+      <FrequentlyAsked/>
+      <Subscribe />
     </div>
   );
 }
