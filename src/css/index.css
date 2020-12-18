@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
-/* 
-Mobile: 375px
-Desktop: 1440px 
-*/
+
 
 
 html,
@@ -42,3 +39,27 @@ button{
     opacity: 1;
   }
 }
+
+
+/* Media Queries */
+
+/* @media (max-width: 740px){
+
+  .extension{
+    height: 100vh !important;
+  }
+
+  .extension__bottom__container{
+    flex-wrap: wrap;
+    min-width: 0px !important ;
+    height: 100% !important;
+    width: 100% !important;
+    border: 2px solid red;
+  }
+}
+
+@media (max-width: 520px){
+  .extension{
+    height: !important 1600px;
+  }
+} */

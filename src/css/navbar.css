@@ -1,6 +1,6 @@
 .NavBar{
-    /* border: 2px solid black; */
     height: 130px;
+    position: relative;
 }
 
 .navbar__container{
@@ -27,11 +27,129 @@
     text-transform: uppercase;
 }
 
-.key-element{
+.nav li:not(.key-element):hover{
+    color: var(--soft-red);
+}
+
+.nav li.key-element{
     color: white;
-    padding: 8px 80px;
+    padding: 8px 22px;
     background-color: var(--soft-red);
-    font-size: 16px;
     border-radius: 4px;
     margin-left: 10px;
+    border: 2px solid transparent;
+
+}
+
+.nav li.key-element:active{
+    color: var(--soft-red);
+    background-color: white;
+    border: 2px solid var(--soft-red);
+}
+
+.hamburger{
+    cursor: pointer;
+}
+
+.hidden__nav{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(37, 43, 70, .95);
+    top: 0;
+    z-index: 100;
+    padding: 5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-200%);
+    transition: transform 500ms ease-in;
+
+}
+
+.hidden__nav.showing{
+    transform: translateY(0);
+}
+
+
+
+.hidden__nav__top{
+    flex: .1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.hidden__nav__middle{
+    flex: .5;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    
+}
+
+.times {
+    cursor: pointer;
+}
+
+.hidden__nav__middle > span{
+    text-transform: uppercase;
+    color: white;
+    padding: 20px;
+    border-top: 2px solid rgba(85, 83, 110, 0.9);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.hidden__nav__middle span:nth-last-child(2){
+    border-bottom: 2px solid rgba(85, 83, 110, 0.9);
+}
+
+
+.hidden__nav__middle > span.hidden__nav__login{
+    border-radius: 4px;
+    border: 2px solid white;
+    padding: 15px 0;
+    margin-top: 15px;
+}
+
+.hidden__nav__bottom{
+
+    flex: .4;
+    width: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+
+.hidden__nav__facebook{
+    margin-right: 15px;
+    cursor: pointer;
+}
+.hidden__nav__twitter{
+    margin-left: 15px;
+    cursor: pointer;
+
+}
+
+
+
+
+
+@media(max-width: 720px){
+    .nav{
+        display: none;
+    }
+
+
 }

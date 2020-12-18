@@ -25,9 +25,9 @@ const Features = () => {
                     Out aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
                 </div>
                 <div className="features__button__holder">
-                    <button className= {currentSlide === 1 ? "first feature-btn btn__active" : "first feature-btn"} onClick = {()=> setCurrentSlide(1)}>Simple Bookmarking</button>
-                    <button className={currentSlide === 2 ? "first feature-btn btn__active" : "first feature-btn"} onClick = {()=> setCurrentSlide(2)}>Speedy Searching</button>
-                    <button className={currentSlide === 3 ? "first feature-btn btn__active" : "first feature-btn"} onClick = {()=> setCurrentSlide(3)}>Easy Sharing</button>
+                    <button className= {currentSlide === 1 ? "feature-btn btn__active" : "feature-btn"} onClick = {()=> setCurrentSlide(1)}>Simple Bookmarking</button>
+                    <button className={currentSlide === 2 ? "feature-btn btn__active" : "feature-btn"} onClick = {()=> setCurrentSlide(2)}>Speedy Searching</button>
+                    <button className={currentSlide === 3 ? "feature-btn btn__active" : "feature-btn"} onClick = {()=> setCurrentSlide(3)}>Easy Sharing</button>
                 </div>  
             </div>
             <div className="features__tab__container">

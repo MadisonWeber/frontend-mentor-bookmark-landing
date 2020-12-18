@@ -3,7 +3,7 @@ import "../css/extension.css"
 import chromeImage from "../images/logo-chrome.svg";
 import firefoxImage from "../images/logo-firefox.svg";
 import operaImage from "../images/logo-opera.svg";
-// import backgroundDots from '../images/bg-dots.svg'
+
 
 
 

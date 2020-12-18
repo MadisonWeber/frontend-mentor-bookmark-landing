@@ -4,7 +4,7 @@
 }
 
 .freq__title{
-    font-size: 20px;
+    font-size: 22px;
     margin-top: 15px;
     letter-spacing: 1px;
     font-weight: 500;
@@ -13,18 +13,19 @@
 
 
 .freq__text{
-    width: 35%;
+    width: max(320px, 32%);
     margin: auto;
     font-size: 14px;
     line-height: 1.5;
     color: var(--grayish-blue);
     max-width: 400px;
+
 }
 
 
 
 .question__panel{
-    width: 36%;
+    width: max(420px, 36%);
     margin: 40px auto; 
 }
 
@@ -41,7 +42,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 4px 10px;
-
 }
 
 
@@ -58,6 +58,11 @@
     transform: rotate(180deg);
 }
 
+.rotate-svg > path{
+    stroke: var(--soft-red);
+
+}
+
 .answer__text{
     font-size: 13px;
     text-align: left;
@@ -67,4 +72,29 @@
     margin-top: 0;
     padding: 0 10px;
     line-height: 2;
+    animation: opacityIn 200ms ease-in;
+
+}
+
+
+.question__container:active{
+    color: var(--soft-red);
+}
+
+
+@media(max-width: 500px){
+    .question__panel{
+        width: 90%;
+    }
+}
+
+@media(max-width: 380px){
+    .question__text{
+        white-space: nowrap;
+        font-size: 13px;
+    }
+
+    .freq__text{
+        max-width: 300px;
+    }
 }

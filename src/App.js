@@ -6,6 +6,7 @@ import Features from './components/Features';
 import Extension from './components/Extension';
 import FrequentlyAsked from './components/FrequentlyAsked';
 import Subscribe from './components/Subscribe';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Extension />
       <FrequentlyAsked/>
       <Subscribe />
+      <Footer />
     </div>
   );
 }

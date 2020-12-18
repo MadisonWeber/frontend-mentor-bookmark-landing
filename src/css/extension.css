@@ -1,22 +1,21 @@
 .extension{
-
-    height: 75vh;
+    margin-bottom: 120px;
 }
 
 .extension__container{
     display: flex;
     flex-direction: column;
-    height: 100%;
+
 }
 
 .extension__top{
-
     flex: .35;
     text-align: center;
+    margin-bottom: 80px;
 }
 
 .extension__top h3{
-    font-size: 20px;
+    font-size: 22px;
     margin-top: 15px;
     letter-spacing: 1px;
     font-weight: 500;
@@ -36,13 +35,13 @@
 
     flex: .65;
     flex-grow: 1;
-    height: 100%;
+
 }
 
 .extension__bottom__container{
  
     max-width: 900px;
-    min-width: 600px;
+    min-width: 680px;
     height: 75%;
     width: 70%;
     margin: auto;
@@ -50,6 +49,7 @@
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
+
 }
 
 .extension__chrome, 
@@ -63,6 +63,12 @@
 
 .extension__chrome{
     align-self: flex-start;
+    margin-right: 10px;
+}
+
+.extension__firefox{
+    margin-right: 10px;
+
 }
 
 .extension__browser__title{
@@ -84,10 +90,17 @@
 .add__extension__btn{
     color: white;
     background-color: var(--soft-blue);
-    padding: 10px 15px;
+    padding: 10px 14px;
     border-radius: 4px;
     white-space: nowrap;
     margin-top: 20px;
+    border: 2px solid transparent;
+}
+
+.add__extension__btn:active{
+    color: var(--soft-blue);
+    border: 2px solid var(--soft-blue);
+    background-color: white;
 }
 
 .dotted{
@@ -96,3 +109,41 @@
     transform: translateX(-20px);
     background:url("../images/bg-dots.svg") 
 }
+
+/* Media Queries */
+
+@media (max-width: 740px){
+
+    .extension__chrome, 
+    .extension__firefox,
+    .extension__opera{
+        margin: 10px 10px;
+    }
+
+    .extension{
+        margin-bottom: 100px;
+    }
+  
+    .extension__bottom__container{
+      flex-wrap: wrap;
+      min-width: 0px  ;
+      height: 100% ;
+      width: 100% ;
+    }
+
+    .extension__top > p {
+        width: 95%;
+    }
+  }
+  
+  @media (max-width: 440px){
+    .extension{
+      height: 1200px;
+      flex: 1;
+    }
+
+    .extension__top{
+        flex: .2;
+    }
+
+  }

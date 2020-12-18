@@ -1,7 +1,9 @@
 .features{
-    height: 80vh;
+
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
+
 }
 
 .features__top{
@@ -14,16 +16,16 @@
 .features__top h2{
     color: var(--very-dark-blue);
     font-weight: 500;
-    font-size: 24px;
+    font-size: 22px;
     margin-top: 0;
 }
 
 .features__text{
     color: var(--grayish-blue);
     font-size: 14px;
-    width: 35%;
     line-height: 1.5;
     margin-bottom: 2.3rem;
+    max-width: 420px;
 }
 
 .features__button__holder{
@@ -37,19 +39,22 @@
     padding: 20px 0px;
     cursor: pointer;
     width: 200px;
+}
 
+.feature-btn:hover{
+    color: var(--soft-red);
 }
 
 .btn__active{
 
-    border-bottom: 3px solid var(--soft-red);
+    border-bottom:  3px solid var(--soft-red) !important;
 }
 
 
 .features__tab__container{
     display: flex;
     flex-grow: 1;
-
+    min-height: 450px;
 }
 
 .features__tab__left{
@@ -97,6 +102,7 @@
 .tab__right__title{
     font-size: 22px;
     margin-top: 100px;
+    font-weight: 500;
 }
 
 .tab__right__text{
@@ -104,6 +110,7 @@
     font-size: 14px;
     color: var(--grayish-blue);
     margin-bottom: 1.5rem;
+    max-width: 440px;
 }
 .more__info__btn{
     color: white;
@@ -111,4 +118,72 @@
     border-radius: 4px;
     padding: 8px 12px;
     font-size: 14px;
+}
+
+
+@media (max-width: 720px){
+    .tab__right__container{
+        margin-left: 0;
+        width: 100%;
+
+    }
+}
+
+
+@media (max-width: 660px){
+
+    .generic__mockup{
+        left: 0;
+        margin: 0 auto;
+        max-width: 370px;
+        max-height: 280px;
+    }
+
+    .features{
+        min-height: 100vh;
+        height: none;
+    }
+
+    .features__tab__container{
+        flex-direction: column;
+        text-align: center;
+     
+    }
+
+    .tab__right__text{
+        align-self: center;
+        max-width: none;
+        padding: 0 20px;
+    }
+
+    .features__text{
+        padding: 0 20px;
+    }
+
+    .tab__right__title{
+        margin-top: 20px;
+    }
+
+    .features__tab__left{
+        margin: 100px 0;
+    }
+
+    .features__tab__right{
+        margin-bottom: 40px;
+        /* min-height: 500px; */
+    }
+    .features__button__holder{
+        border-bottom: 1px solid transparent;
+    }
+
+    .feature-btn{
+        width: 80%;
+        border-top: 1px solid rgba(40,40,40,.3);
+    }
+
+    .feature-btn:last-child{
+        border-bottom: 1px solid rgba(40,40,40,.3);
+    }
+
+
 }

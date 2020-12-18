@@ -1,0 +1,74 @@
+.footer{
+    height: 4rem;
+    background-color: var(--very-dark-blue);
+}
+
+.footer__container{
+    height: 100%;
+    width: var(--inner-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.footer__links{
+    margin-right: auto;
+    margin-left: 86px;
+}
+
+.footer__links span{
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-right: 26px;
+    text-transform: uppercase;
+}
+
+.footer__links span:active{
+    color: var(--soft-red);
+}
+
+
+
+.facebook-icon{
+    margin-right: 26px;
+}
+
+.facebook-icon,
+.twitter-icon{
+    cursor: pointer;
+}
+
+.facebook-icon> path:hover,
+.twitter-icon> path:hover{
+    fill: var(--soft-red);
+
+}
+
+
+@media(max-width: 680px){
+    .footer{
+        height: 300px;
+    }
+    .footer__container{
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .footer__links{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        justify-content: space-evenly;
+    }
+
+    .footer__links span{
+        margin: 0 0 ;
+    }
+
+}
